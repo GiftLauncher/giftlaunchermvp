@@ -1,0 +1,9 @@
+# .pairs - configuration for 'git pair'
+pairs:
+  # <initials>: <Firstname> <Lastname>[; <email-id>]
+  zm: zander; zand3rs
+email:
+  prefix: pair
+  domain: gmail.com
+  no_solo_prefix: true
+#global: true

@@ -1,0 +1,31 @@
+# Mysql
+#   gem install mysql2
+#
+#   Ensure the gem is defined in your Gemfile
+#   gem 'mysql2'
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  database: gift_launcher_development
+  username: root
+  password: 
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  database: gift_launcher_test
+  username: root
+  password: 
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  database: gift_launcher
+  username: root
+  password: 
