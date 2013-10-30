@@ -1,2 +1,4 @@
 %h1 Welcome#index
 %p Find me in app/views/welcome/index.html.haml
+
+%fb:login-button{length: 'long', onlogin: "location.href='#{welcome_path}'", scope: Facebook.config.fb_scope}

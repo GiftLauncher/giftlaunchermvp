@@ -49,6 +49,7 @@ end
 
 # Use haml as template engine
 gem 'haml-rails', '~> 0.4'
+gem 'fb_graph', '~> 2.7.8'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.0'
