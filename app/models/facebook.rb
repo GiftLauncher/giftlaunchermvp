@@ -1,4 +1,5 @@
 class Facebook < ActiveRecord::Base
+  belongs_to :user
 
   class << self
     def config
