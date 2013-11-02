@@ -54,5 +54,6 @@ gem 'fb_graph', '~> 2.7.8'
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.0'
   gem 'rr', '~> 1.1.2'
+  gem 'factory_girl_rails', '~> 4.2.1'
   gem 'shoulda-matchers', '~> 2.4.0'
 end
