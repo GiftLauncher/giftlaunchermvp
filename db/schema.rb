@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20131102010142) do
   end
 
   create_table "users", force: true do |t|
-    t.integer  "facebook_id"
     t.string   "email"
     t.string   "first_name"
     t.string   "last_name"
