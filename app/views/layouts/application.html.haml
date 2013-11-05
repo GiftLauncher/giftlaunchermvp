@@ -3,9 +3,42 @@
   %head
     %title Gift Launcher
 
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
+
+    = stylesheet_link_tag "/assets/plugins/font-awesome/css/font-awesome.min.css"
+    = stylesheet_link_tag "/assets/plugins/bootstrap/css/bootstrap.min.css"
+    = stylesheet_link_tag "/assets/plugins/fancybox/source/jquery.fancybox.css"
+    = stylesheet_link_tag "/assets/plugins/revolution_slider/css/rs-style.css", media: "screen"
+    = stylesheet_link_tag "/assets/plugins/revolution_slider/rs-plugin/css/settings.css", media: "screen"
+    = stylesheet_link_tag "/assets/plugins/bxslider/jquery.bxslider.css"
+    = stylesheet_link_tag "/assets/css/style-metronic.css"
+    = stylesheet_link_tag "/assets/css/style.css"
+    = stylesheet_link_tag "/assets/css/style-responsive.css"
+    = stylesheet_link_tag "/assets/css/themes/blue.css"
+
+    = javascript_include_tag "/assets/plugins/respond.min.js"
+    = javascript_include_tag "/assets/plugins/jquery-1.10.2.min.js"
+    = javascript_include_tag "/assets/plugins/jquery-migrate-1.2.1.min.js"
+    = javascript_include_tag "/assets/plugins/bootstrap/js/bootstrap.min.js"
+    = javascript_include_tag "/assets/plugins/hover-dropdown.js"
+    = javascript_include_tag "/assets/plugins/back-to-top.js"
+
+    = javascript_include_tag "/assets/plugins/fancybox/source/jquery.fancybox.pack.js"
+    = javascript_include_tag "/assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js"
+    = javascript_include_tag "/assets/plugins/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js"
+    = javascript_include_tag "/assets/plugins/bxslider/jquery.bxslider.min.js"
+    = javascript_include_tag "/assets/scripts/app.js"
+    = javascript_include_tag "/assets/scripts/index.js"
+    :javascript
+      jQuery(document).ready(function() {
+        App.init();
+        App.initBxSlider();
+        Index.initRevolutionSlider();
+      });
+
     = csrf_meta_tags
+    %meta{:content => "width=device-width, initial-scale=1.0", "name" => "viewport"}
 
   %body
     = yield

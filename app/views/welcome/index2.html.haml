@@ -1,0 +1,140 @@
+.header.navbar.navbar-default.navbar-static-top
+    .container
+        .navbar-header
+            %button.navbar-toggle.btn.navbar-btn{'data-toggle' => 'collapse', 'data-target' => '.navbar-collapse'}
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+            %a.navbar-brand.logo-v1
+                %img#logoimg{:src => 'img/GitLauncher/header and footer/logo.png', :alt => ''}
+
+        .navbar-collapse.collapse
+            %ul.nav.navbar-nav
+                %li.dropdown
+                    %a.dropdown-toggle{'data-toggle' => 'dropdown', 'data-hover' => 'dropdown', 'data-delay' => '0', 'data-close-others' => 'false', :href => '#'}
+                        %button.login
+                    %ul.dropdown-menu
+                        %li.active
+                            %a{:href => 'index.html'} Home Default
+                        %li
+                            %a{:href => 'page_home2.html'} Home with Top Bar
+                %li.dropdown
+                    %a.dropdown-toggle{'data-toggle' => 'dropdown', 'data-hover' => 'dropdown', 'data-delay' => '0', 'data-close-others' => 'false', :href => '#'}
+                        %button.signup
+                    %ul.dropdown-menu
+                        %li
+                            %a{:href => 'page_about.html'} About Us
+.container
+    .page-container
+        .fullwidthbanner-container.slider-main
+            .fullwidthabnner
+                %ul#revolutionul{:style => 'display: none;'}
+                    %li{'data-transition' => 'fade', 'data-slotamount' => '8', 'data-masterspeed' => '700', 'data-delay' => '9400', 'data-thumb' => 'assets/img/sliders/revolution/thumbs/thumb2.jpg'}
+                        %img.man{:src => '/img/GitLauncher/down second/give and receive.png', :alt => ''}
+                        .caption.lft.slide_title.slide_item_left{'data-x' => '0', 'data-y' => '105', 'data-speed' => '400', 'data-start' => '1500', 'data-easing' => 'easeOutExpo'}
+                            | Need a website design ?
+                        .caption.lft.slide_subtitle.slide_item_left{'data-x' => '0', 'data-y' => '180', 'data-speed' => '400', 'data-start' => '2000', 'data-easing' => 'easeOutExpo'}
+                            | This is what you were looking for
+                        .caption.lft.slide_desc.slide_item_left{'data-x' => '0', 'data-y' => '220', 'data-speed' => '400', 'data-start' => '2500', 'data-easing' => 'easeOutExpo'}
+                            | Lorem ipsum dolor sit amet, dolore eiusmod
+                            %br
+                            | quis tempor incididunt. Sed unde omnis iste.
+                        %a.caption.lft.btn.green.slide_btn.slide_item_left{:href => 'http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes', 'data-x' => '0', 'data-y' => '290', 'data-speed' => '400', 'data-start' => '3000', 'data-easing' => 'easeOutExpo'}
+                            | Purchase Now!
+                        .caption.lfb{'data-x' => '640', 'data-y' => '55', 'data-speed' => '700', 'data-start' => '1000', 'data-easing' => 'easeOutExpo'}
+
+                    %li{'data-transition' => 'fade', 'data-slotamount' => '7', 'data-masterspeed' => '300', 'data-delay' => '9400', 'data-thumb' => 'assets/img/sliders/revolution/thumbs/thumb2.jpg'}
+                        %img{:src => '/img/GitLauncher/down second/sliderbg.png', :alt => ''}
+                        .caption.lfl.slide_title.slide_item_left{'data-x' => '0', 'data-y' => '125', 'data-speed' => '400', 'data-start' => '3500', 'data-easing' => 'easeOutExpo'}
+                            | Powerfull & Clean
+                        .caption.lfl.slide_subtitle.slide_item_left{'data-x' => '0', 'data-y' => '200', 'data-speed' => '400', 'data-start' => '4000', 'data-easing' => 'easeOutExpo'}
+                            | Responsive Admin & Website Theme
+                        .caption.lfl.slide_desc.slide_item_left{'data-x' => '0', 'data-y' => '245', 'data-speed' => '400', 'data-start' => '4500', 'data-easing' => 'easeOutExpo'}
+                            | Lorem ipsum dolor sit amet, consectetuer elit sed diam
+                            %br
+                            | nonummy amet euismod dolore.
+                        .caption.lfr.slide_item_right{'data-x' => '635', 'data-y' => '105', 'data-speed' => '1200', 'data-start' => '1500', 'data-easing' => 'easeOutBack'}
+                            %img{:src => 'assets/img/sliders/revolution/mac.png', :alt => 'Image 1'}
+                        .caption.lfr.slide_item_right{'data-x' => '580', 'data-y' => '245', 'data-speed' => '1200', 'data-start' => '2000', 'data-easing' => 'easeOutBack'}
+                            %img{:src => 'assets/img/sliders/revolution/ipad.png', :alt => 'Image 1'}
+                        .caption.lfr.slide_item_right{'data-x' => '735', 'data-y' => '290', 'data-speed' => '1200', 'data-start' => '2500', 'data-easing' => 'easeOutBack'}
+                            %img{:src => 'assets/img/sliders/revolution/iphone.png', :alt => 'Image 1'}
+                        .caption.lfr.slide_item_right{'data-x' => '835', 'data-y' => '230', 'data-speed' => '1200', 'data-start' => '3000', 'data-easing' => 'easeOutBack'}
+                            %img{:src => 'assets/img/sliders/revolution/macbook.png', :alt => 'Image 1'}
+                        .caption.lft.slide_item_right{'data-x' => '865', 'data-y' => '45', 'data-speed' => '500', 'data-start' => '5000', 'data-easing' => 'easeOutBack'}
+                            %img#rev-hint1{:src => 'assets/img/sliders/revolution/hint1-blue.png', :alt => 'Image 1'}
+                        .caption.lfb.slide_item_right{'data-x' => '355', 'data-y' => '355', 'data-speed' => '500', 'data-start' => '5500', 'data-easing' => 'easeOutBack'}
+                            %img#rev-hint2{:src => 'assets/img/sliders/revolution/hint2-blue.png', :alt => 'Image 1'}
+
+                    .tp-bannershadow.tp-shadow1{:style => 'width: 1349px;'}
+                .tp-bannertimer.tp-bottom
+.text-center
+    %h1 Going Beyond the Box
+    %p Giftlauncher let's you receive only the most meaningful gifts for life's most memorable occasions.
+.container
+    .row
+        .col-md-4.col-sm-4.col-xs-4.text-center
+            %center
+                %img.img-responsive{:src => '/img/GitLauncher/down third/chain left.png'}
+                %h1 Create a Wishlist for Any Occasion
+                %p.Easy to set up Wishlist to let your guests know about the meaningful gifts that matter to you. Whet
+
+        .col-md-4.col-sm-4.col-xs-4.text-center
+            %center
+                %img.img-responsive{:src => '/img/GitLauncher/down third/chain mid.png'}
+                %h1 Gift Sharing
+                %p.You donít need to worry about listing high ticket items because with our Gift Sharing feature your
+
+        .col-md-4.col-sm-4.col-xs-4.text-center
+            %center
+                %img.img-responsive{:src => '/img/GitLauncher/down third/chain right.png'}
+                %h1 Flexibility
+                %p.We offer ultimate flexibility to get you the gifts that go beyond the usual. Why limit yourself to
+
+.text-center
+    %h1 Featured Gifts
+.container
+    .row
+        .col-md-3.col-sm-3.col-xs-6.text-center
+            .center
+                %img.img-responsive.imgsize{:src => '/img/GitLauncher/down fourth/London.png'}
+            %h2 Image 1 Trip To London
+        .col-md-3.col-sm-3.col-xs-6.text-center
+            .center
+                %img.img-responsive.imgsize{:src => '/img/GitLauncher/down fourth/Surfer.png'}
+            %h2 Image 2Surf Getaway
+        .col-md-3.col-sm-3.col-xs-6.text-center
+            .center
+                %img.img-responsive.imgsize{:src => '/img/GitLauncher/down fourth/Alessi Watch.png'}
+            %h2 Image 3 Alessi Watch
+        .col-md-3.col-sm-3.col-xs-6.text-center
+            .center
+                %img.img-responsive.imgsize{:src => '/img/GitLauncher/down fourth/Turntable.png'}
+            %h2 Image 4 Turntable
+
+    .bgcolor
+        .row.cs
+            .col-md-6.text-center
+                .col-md-4.text-center
+                    %br
+                    %button.how-it-works
+                    %button.about-us
+                .col-md-4.text-center
+                    %br
+                    %button.contact-us
+                    %button.privacy-policy
+                .col-md-4.text-center
+                    %br
+                    %button.terms-of-service
+
+            .col-md-6.text-center
+                .col-md-3.text-center
+                    %button.ic-fb
+                .col-md-3.text-center
+                    %button.ic-tw
+                .col-md-3.text-center
+                    %button.ic-pint
+                .col-md-3.text-center
+                    %button.ic-insta
+        .text-center
+            %h1.color1 2013 Weddinglab.ph
