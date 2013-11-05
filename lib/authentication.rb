@@ -19,14 +19,18 @@ module Authentication
 
   module ControllerMethods
     def require_authentication
-      authenticate User.find_by_id(session[:current_user])
+      authenticate current_user
     rescue Unauthorized => e
-      redirect_to root_url and return false
+      redirect_to root_path and return false
     end
 
     def authenticate(user)
       raise Unauthorized unless user
-      session[:current_user] = user.id
+      if !current_user || current_user.id != user.id
+        session[:current_user] = user.id
+        # reset current_user
+        @current_user = nil
+      end
     end
 
     def unauthenticate

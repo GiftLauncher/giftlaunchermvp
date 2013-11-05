@@ -55,6 +55,11 @@ GiftLauncher::Application.routes.draw do
   #   end
 
   root 'welcome#index'
-  get 'welcome', :to => 'welcome#show'
+
+  get 'home', :to => 'events#index'
+  get 'login', :to => 'facebooks#login'
+  get 'logout', :to => 'facebooks#logout'
+
+  get 'events/index'
 
 end

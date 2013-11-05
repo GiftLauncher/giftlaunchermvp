@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
         :title   => e.class,
         :message => e.message
     }
-    redirect_to root_url
+    redirect_to root_path
   end
 
 end

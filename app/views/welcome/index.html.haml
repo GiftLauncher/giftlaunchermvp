@@ -1,4 +1,6 @@
 %h1 Welcome#index
 %p Find me in app/views/welcome/index.html.haml
+%p
+  = link_to 'Events page', events_index_path
 
-%fb:login-button{length: 'long', onlogin: "location.href='#{welcome_path}'", scope: Facebook.config.fb_scope}
+%fb:login-button{length: 'long', onlogin: "location.href='#{login_path}'", scope: Facebook.config.fb_scope}
