@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Gift Launcher
+
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+  %body
+    = yield
+    = javascript_include_tag "http://connect.facebook.net/en_US/all.js"
+    :javascript
+      FB.init({
+          appId: #{Facebook.config.fb_app_id},
+          cookie: true,
+          xfbml: true,
+          oauth: true
+      });
