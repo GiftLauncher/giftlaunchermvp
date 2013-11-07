@@ -51,6 +51,7 @@ end
 gem 'haml-rails', '~> 0.4'
 gem 'fb_graph', '~> 2.7.8'
 gem 'paperclip', '~> 3.5.2'
+gem 'rails_admin', '~> 0.5.0'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.0'

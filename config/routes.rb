@@ -54,6 +54,7 @@ GiftLauncher::Application.routes.draw do
   #     resources :products
   #   end
 
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   root 'welcome#index'
 
   get 'home', :to => 'events#index'
