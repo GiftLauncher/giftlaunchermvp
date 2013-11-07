@@ -11,12 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131102010142) do
+ActiveRecord::Schema.define(version: 20131107072800) do
 
   create_table "facebooks", force: true do |t|
     t.integer  "user_id"
     t.string   "identifier",   limit: 20
     t.string   "access_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gifts", force: true do |t|
+    t.string   "name"
+    t.string   "description", limit: 1000
+    t.float    "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
